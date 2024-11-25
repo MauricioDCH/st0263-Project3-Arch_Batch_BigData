@@ -1,0 +1,38 @@
+STEPS A AGREGAR.
+
+STEP 1.
+Type: Shell script.
+Name: Cargar Archivo Inicial.
+Shell script location: s3://covid19bucket-mauricio/scripts/init.sh
+Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/init.sh . && chmod +x init.sh && ./init.sh"
+Action if step fails: Cancel and wait
+
+STEP 2.
+Type: Shell script.
+Name: Cargar Archivo Ingesta.
+Shell script location: s3://covid19bucket-mauricio/scripts/ingesta.sh
+Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/ingesta.sh . && chmod +x ingesta.sh && ./ingesta.sh"
+Action if step fails: Cancel and wait
+
+
+STEP 3.
+Type: Shell script.
+Name: Cargar Archivo Procesamiento.
+Shell script location: s3://covid19bucket-mauricio/scripts/procesamiento.sh
+Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/procesamiento.sh . && chmod +x procesamiento.sh && ./procesamiento.sh"
+Action if step fails: Cancel and wait
+
+STEP 4.
+Type: Shell script.
+Name: Cargar Archivo credentials.
+Shell script location: s3://covid19bucket-mauricio/scripts/credentials.sh
+Arguments - optional: <aws_access_key_id> <aws_secret_access_key> <aws_session_token>
+Action if step fails: Cancel and wait
+
+STEP 5.
+Type: Shell script.
+Name: Cargar Archivo Creating Table.
+Shell script location: s3://covid19bucket-mauricio/scripts/creating_table.sh
+Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/creating_table.sh . && chmod +x creating_table.sh && ./creating_table.sh"
+Action if step fails: Cancel and wait
+
