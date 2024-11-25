@@ -27,6 +27,7 @@ Type: Shell script.
 Name: Cargar Archivo credentials.
 Shell script location: s3://covid19bucket-mauricio/scripts/credentials.sh
 Arguments - optional: <aws_access_key_id> <aws_secret_access_key> <aws_session_token>
+
 Action if step fails: Cancel and wait
 
 STEP 5.
@@ -36,3 +37,9 @@ Shell script location: s3://covid19bucket-mauricio/scripts/creating_table.sh
 Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/creating_table.sh . && chmod +x creating_table.sh && ./creating_table.sh"
 Action if step fails: Cancel and wait
 
+STEP 6.
+Type: Shell script.
+Name: Cargar Archivo Creating Full Tables.
+Shell script location: s3://covid19bucket-mauricio/scripts/tables.sh
+Arguments - optional: bash -c "aws s3 cp s3://covid19bucket-mauricio/scripts/tables.sh . && chmod +x tables.sh && ./tables.sh"
+Action if step fails: Cancel and wait

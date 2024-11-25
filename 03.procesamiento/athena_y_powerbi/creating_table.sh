@@ -28,3 +28,4 @@ aws athena start-query-execution \
     )" \
     --query-execution-context Database="default" \
     --result-configuration OutputLocation="s3://datasets-mauricio/wcout10/"
+
