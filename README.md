@@ -148,4 +148,4 @@ Configurar los Authentications settings con las credenciales de AWS, provistas e
 
 ## Video sustentación.
 
-[Video sustentación de Proyecto 3.](https://teams.microsoft.com/l/message/19:7e5769477ecc417b829a1e7e424ae0a0@thread.v2/1732516851777?context=%7B%22contextType%22%3A%22chat%22%7D)
+[Video sustentación de Proyecto 3.](https://eafit-my.sharepoint.com/:v:/g/personal/mdcorreah_eafit_edu_co/EWpnru0MtfBNs5wV-viHtlQBFRjZhVbZK6ANJ3PRyM0W0g?e=tgDiIf)
